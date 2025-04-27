@@ -1,40 +1,39 @@
-/* место для вашего кода */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .header {
   display: grid;
-  font-size: 18px;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  min-height: 293px;
-  padding: 95px 50px 100px 50px;
+  max-height: 273px;
+  font-size: 18px;
 }
 
 .header__links-list {
-  margin: 133px 36.5px 138px 50px;
   display: flex;
   gap: 35.5px;
+  margin: 133px 36.5px 138px 50px;
   list-style: circle;
 }
 
 .header__link_active {
-    text-decoration: none;
+  text-decoration: none;
 }
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 .header__logo-image {
   display: block;
-  height: 150px;
-  width: 195px;
+  width: 130px;
+  height: 105px;
 }
 
 .address {
-  margin: 95px 50px 100px 184px;
-  max-width: 240px;
   justify-self: end;
+  max-width: 240px;
+  margin: 95px 50px 100px 184px;
+  line-height: 24.3px;
 }
 
 address {
@@ -42,11 +41,11 @@ address {
 }
 
 .cover {
+  color: white;
   background-image: url("../images/cover.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
+  background-size: cover;
 }
 .overlay {
   position: relative;
@@ -55,51 +54,59 @@ address {
 }
 
 .cover__title {
-  padding: 165px 50px 207px 50px;
-  font-size: 100px;
+  padding: 165px 50px 0 50px;
   font-weight: 700;
-  line-height: 114.99999999999999%;
+  font-size: 100px;
+  line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
 .cover__title span {
   display: block;
+  margin-top: 20px;
 }
 .aligned-text {
   text-align: left;
 }
 
 .aligned-text_center {
+  padding-left: 30px;
   text-align: center;
 }
 
 .aligned-text_right {
+  margin-right: -30px;
   text-align: right;
 }
 
 .cover__description {
   display: flex;
-  max-height: fit-content;
   justify-content: space-between;
   margin: 106px 50px 50px 50px;
-}
-.cover__description-text {
+  margin-top: 106px;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 18px;
+}
+.cover__description-text {
+  margin-top: 10px;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+  text-wrap: nowrap;
 }
 
 .bet-button {
-  background: transparent;
-  padding: 12px 32px 11px 31px;
-  text-wrap: nowrap;
   margin: 0 50px 50px 107px;
   border: 1px solid white;
+  padding: 12px 32px 11px 31px;
   color: white;
-  text-transform: uppercase;
-  font-size: 22px;
   font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+  text-wrap: nowrap;
 }
 
 .lots {
@@ -107,36 +114,35 @@ address {
 }
 
 .lots__heading {
-  font-weight: 700;
   margin: 0 0 27px 40px;
+  font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
-  gap: 25px;
   flex-wrap: nowrap;
+  gap: 25px;
   margin-bottom: 30px;
 }
 
 .lots__card-list-item {
-  width: 334px;
-  min-height: 596px;
-  flex-shrink: 0;
   display: flex;
   flex-wrap: nowrap;
+  flex-shrink: 0;
+  width: 334px;
   min-height: 596px;
+  color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
 }
 
 .card-link,
 .card {
-  text-decoration: none;
   height: 100%;
+  text-decoration: none;
 }
 
 .card__title {
@@ -145,8 +151,8 @@ address {
   font-size: 22px;
   line-height: 120%;
   text-decoration: underline;
-  text-transform: uppercase;
   text-decoration-style: solid;
+  text-transform: uppercase;
 }
 .card {
   display: flex;
@@ -190,34 +196,34 @@ address {
 }
 
 .about {
-  margin: 120px 24px 180px 24px;
   display: grid;
   grid-template-columns: 334px auto;
-  column-gap: 72px;
+  column-gap: 26px;
+  margin: 120px 24px 180px 24px;
 }
 
 .about__title {
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 100px;
 }
 
 .about__text {
+  margin-top: 24px;
   font-size: 20px;
   line-height: 24px;
-  margin-top: 24px;
 }
 
 .about__logo {
-  width: 240px;
-  height: 240px;
-  background-color: black;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  margin: 30px auto;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .about__logo-image {
@@ -226,25 +232,23 @@ address {
 }
 
 .about__column {
-  margin-top: 133px;
+  margin-top: 135px;
 }
 
 .footer {
   display: grid;
-  grid-template-columns: 334px 1fr 240px;
-  margin: 180px 0 0 24px;
-  padding: 180px 50px 90px;
-  max-height: 180px;
+  grid-template-columns: 240px 1fr 240px;
+  margin: 180px 50px 90px;
   font-size: 18px;
 }
 
 .footer__address {
   justify-self: start;
-  min-width: 240px;
+  min-width: 264px;
   max-height: 98px;
-  margin: 0 154px 82px 50px;
-  line-height: 24.3px;
+  margin: 0 154px 82px 0;
   font-size: 18px;
+  line-height: 24.3px;
 }
 
 .footer__menu {
@@ -252,14 +256,11 @@ address {
 }
 
 .footer__menu-list {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 86%;
   text-align: center;
   list-style: none;
-  font-size: 18px;
-  line-height: normal;
-}
-
-.footer__menu-list-item:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .footer__menu-link {
@@ -271,10 +272,10 @@ address {
 }
 
 .footer__social-list {
-  justify-self: end;
-  list-style: none;
   display: flex;
+  justify-self: end;
   gap: 48px;
+  list-style: none;
 }
 
 .footer__social-icon {
