@@ -20,9 +20,11 @@ html {
 .header__link_active {
   text-decoration: none;
 }
+
 .header__links-list-item_no-bullit {
   list-style: none;
 }
+
 .header__logo-image {
   display: block;
   width: 130px;
@@ -47,6 +49,7 @@ address {
   background-position: center;
   background-size: cover;
 }
+
 .overlay {
   position: relative;
   z-index: 1;
@@ -61,10 +64,12 @@ address {
   letter-spacing: 30px;
   text-transform: uppercase;
 }
+
 .cover__title span {
   display: block;
   margin-top: 20px;
 }
+
 .aligned-text {
   text-align: left;
 }
@@ -88,6 +93,7 @@ address {
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .cover__description-text {
   margin-top: 10px;
   font-size: 22px;
@@ -145,6 +151,11 @@ address {
   text-decoration: none;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card__title {
   margin: 48px 40px 274px 40px;
   font-weight: 700;
@@ -154,10 +165,6 @@ address {
   text-decoration-style: solid;
   text-transform: uppercase;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-}
 
 .card__text {
   margin: 0 40px 48px 40px;
@@ -165,21 +172,24 @@ address {
   line-height: 120%;
 }
 
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: contain;
-}
-
 .card_type_book .card__title {
   margin-bottom: 30px;
 }
+
 .card_type_picture .card__title {
   margin-bottom: 126px;
 }
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+}
+
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
   background-size: cover;
 }
+
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
@@ -190,29 +200,11 @@ address {
   font-size: 20px;
 }
 
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-}
-
 .about {
   display: grid;
   grid-template-columns: 334px auto;
   column-gap: 26px;
   margin: 120px 24px 180px 24px;
-}
-
-.about__title {
-  margin-bottom: 100px;
-  font-weight: 700;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-.about__text {
-  margin-top: 24px;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .about__logo {
@@ -233,6 +225,19 @@ address {
 
 .about__column {
   margin-top: 135px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .footer {
