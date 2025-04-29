@@ -233,7 +233,7 @@ html {
 .footer {
   display: grid;
   grid-template-columns: 240px 1fr 240px;
-  margin: 180px 50px 115px;
+  margin: 180px 50px 82px;
   font-size: 18px;
 }
 
